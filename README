@@ -1,0 +1,18 @@
+Dependencies
+------------
+URI: git://github.com/openembedded/openembedded-core.git
+branch: master
+revision: HEAD
+
+URI: git://github.com/openembedded/bitbake.git
+branch: master
+revision: HEAD
+
+URI: git://github.com/kraj/meta-clang.git
+branch: master
+revision: HEAD
+
+Maintenance
+-----------
+This layer is maintained by the project owner.
+
