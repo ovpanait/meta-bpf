@@ -37,4 +37,3 @@ RDEPENDS_${PN} += " \
 
 FILES_${PN} += "${PYTHON_SITEPACKAGES_DIR}"
 
-BBCLASSEXTEND = "native nativesdk"

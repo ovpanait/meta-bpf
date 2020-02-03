@@ -21,5 +21,3 @@ do_install_append() {
 	mv ${D}${prefix}/man/man8 ${D}${mandir}
 	rm -rf ${D}${prefix}/man
 }
-
-BBCLASSEXTEND = "native nativesdk"

@@ -16,5 +16,3 @@ DEPENDS = "\
 	flex-native \
 	bison-native \
 	"
-
-BBCLASSEXTEND = "native nativesdk"
