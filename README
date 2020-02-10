@@ -12,6 +12,24 @@ URI: git://github.com/kraj/meta-clang.git
 branch: master
 revision: HEAD
 
+Quick Start
+-----------
+git clone https://github.com/openembedded/openembedded-core.git
+git clone https://github.com/openembedded/bitbake.git
+git clone https://github.com/kraj/meta-clang.git
+git clone https://github.com/ovpanait/meta-bpf.git
+
+. openembedded-core/oe-init-build-env
+bitbake-layers add-layer ../meta-clang/
+bitbake-layers add-layer ../meta-bpf/
+
+echo 'IMAGE_INSTALL_append = " bcc bpftrace ply kernel-modules"' >> conf/local.conf
+
+bitbake -c menuconfig virtual/kernel
+-- Set CONFIG_IKHEADERS=m --
+
+bitbake core-image-minimal
+
 Maintenance
 -----------
 This layer is maintained by the project owner.
