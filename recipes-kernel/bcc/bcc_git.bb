@@ -12,6 +12,8 @@ PV = "0.12.0+git${SRCPV}"
 
 inherit cmake python3native
 
+COMPATIBLE_HOST = "(x86_64|aarch64|powerpc64).*-linux"
+
 SRC_URI += " \
 	    file://0001-python-CMakeLists.txt-Remove-check-for-host-etc-debi.patch \
 	    "
