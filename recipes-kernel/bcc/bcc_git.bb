@@ -18,6 +18,9 @@ SRC_URI += " \
 	    file://0001-python-CMakeLists.txt-Remove-check-for-host-etc-debi.patch \
 	    "
 
+PACKAGECONFIG ??= "usdt"
+PACKAGECONFIG[usdt] = "-DENABLE_USDT=ON,-DENABLE_USDT=OFF,"
+
 EXTRA_OECMAKE += "-DCMAKE_USE_LIBBPF_PACKAGE=ON -DPYTHON_CMD=${PYTHON}"
 
 DEPENDS = "\
